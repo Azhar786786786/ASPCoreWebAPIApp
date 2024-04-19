@@ -1,4 +1,5 @@
 ﻿using ASPCoreWebAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
@@ -49,6 +50,27 @@ namespace ASPCoreWebAPI.Controllers
                 response.ErrorMessage = "No data found";
                 return JsonConvert.SerializeObject(response);
             }
+        }
+
+        [Authorize]
+        [HttpGet]
+        [Route("GetData")]
+        public string GetData()
+        {
+            return "Authenticated with JWT";
+        }
+        [HttpGet]
+        [Route("GetDetails")]
+        public string GetDetails()
+        {
+            return "Authenticate JWT";
+        }
+        [Authorize]
+        [HttpPost]
+        [Route("AddUser")]
+        public string AddUser(clsUsers user)
+        {
+            return "Users Added with username:" + user.UserName;
         }
     }
 }
