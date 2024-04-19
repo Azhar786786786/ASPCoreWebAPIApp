@@ -5,6 +5,11 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPCoreWebAPI", "ASPCoreWebAPI\ASPCoreWebAPI.csproj", "{66E30572-4B5D-426F-B512-48C1E3051664}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DE99CB16-26F5-411A-A44C-43033EB882DF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Users\talka\OneDrive\Desktop\Token_JWT.txt = ..\..\..\Users\talka\OneDrive\Desktop\Token_JWT.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
